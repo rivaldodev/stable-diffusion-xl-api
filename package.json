@@ -1,6 +1,6 @@
 {
     "name": "stdxl",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "This is a Node.js module that allows you to generate images using the Replicate API. This module is based on a Python version originally created by KoushikNavuluri (https://github.com/KoushikNavuluri/stable-diffusion-xl-api) and adapted to Node.js by Rivs (Rivaldo - https://github.com/rivaldodev).",
     "main": "lib/stdxl.js",
     "scripts": {
