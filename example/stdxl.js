@@ -42,7 +42,7 @@ class ImageGenerator {
             if (highNoiseFrac > 1) {
                 throw new Error("high_noise_frac must be 1 or less");
             }
-            const url = "https://replicate.com/api/models/stability-ai/sdxl/versions/2b017d9b67edd2ee1401238df49d75da53c523f36e363881e057f5dc3ed3c5b2/predictions";
+            const url = "https://replicate.com/api/models/stability-ai/sdxl/versions/8beff3369e81422112d93b89ca01426147de542cd4684c244b673b105188fe5f/predictions";
             const payload = JSON.stringify({
                 inputs: {
                     width,
@@ -71,7 +71,7 @@ class ImageGenerator {
     }
 
     async getImageUrl(uuid, prompt, negativePrompt) {
-        const url = `https://replicate.com/api/models/stability-ai/sdxl/versions/2b017d9b67edd2ee1401238df49d75da53c523f36e363881e057f5dc3ed3c5b2/predictions/${uuid}`;
+        const url = `https://replicate.com/api/models/stability-ai/sdxl/versions/8beff3369e81422112d93b89ca01426147de542cd4684c244b673b105188fe5f/predictions/${uuid}`;
         const response = await axios.get(url, { headers: this.headers });
         const jsonResponse = response.data;
 
